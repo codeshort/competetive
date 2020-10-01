@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <iostream>
 #define m 1000000009
 using namespace std;
@@ -28,7 +20,7 @@ int main()
    {
       ll n;
       cin>>n;
-      cout<<dp[n]<<"\n";
+      cout<<"ans is"<<dp[n]<<"\n";
        t--;
    }
 
