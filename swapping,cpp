@@ -1,0 +1,54 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include<climits>
+#include <cstring>
+#include<algorithm> 
+
+using namespace std;
+#define ll long long int 
+
+int main()
+{
+   ll t;
+   cin>>t;
+   while(t>0)
+   {
+       ll n ;
+       cin>>n;
+       ll arr[n];
+       for(ll i =0;i<n;i++)
+       {
+           cin>>arr[i];
+          
+       }
+       ll bullu[n+1];
+       bullu[0]=0;
+       bullu[1]=arr[0];
+       for(ll i=2;i<=n;i++)
+       {
+           ll swasum = (arr[i-1]*(i-1)) + (arr[i-2]*(i));
+           bullu[i]= max( (bullu[i-1]+(arr[i-1]*(i))) , (bullu[i-2]+swasum) );
+          
+       }
+       ll sum=0;
+       /*for(ll i=0;i<n;i++)
+       {
+           cout<<bullu[i]<<" ";
+           
+       }*/
+       //cout<<"\n";
+       cout<<bullu[n]<<"\n";
+       t--;
+       
+   }
+
+    return 0;
+}
+
