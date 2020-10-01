@@ -1,10 +1,12 @@
-
 #include <iostream>
 #include <stack>
 using namespace std;
 int n;
 int p=0;
 stack<int>  st;
+
+//calling recursive function 
+
 void functioncall(int x)
 {
     if(st.empty())
@@ -30,7 +32,7 @@ void functioncall(int x)
      
  }
 int main()
-{
+{   //n is no. of elements.
      cin>>n;
     for(int i=0;i<n;i++)
     {
@@ -41,7 +43,7 @@ int main()
     call();
     while(!st.empty())
     {
-        cout<<st.top()<<endl;
+        cout<<"top of stack:"<<st.top()<<endl;
         st.pop();
     }
     return 0;
