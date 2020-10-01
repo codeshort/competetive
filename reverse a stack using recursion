@@ -1,10 +1,12 @@
-
 #include <iostream>
 #include <stack>
 using namespace std;
 int n;
 int p=0;
 stack<int>  st;
+
+//calling recursive function 
+
 void functioncall(int x)
 {
     if(st.empty())
