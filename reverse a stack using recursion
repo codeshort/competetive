@@ -30,7 +30,7 @@ void functioncall(int x)
      
  }
 int main()
-{
+{   //n is no. of elements.
      cin>>n;
     for(int i=0;i<n;i++)
     {
