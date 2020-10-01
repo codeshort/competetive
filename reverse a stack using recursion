@@ -41,7 +41,7 @@ int main()
     call();
     while(!st.empty())
     {
-        cout<<st.top()<<endl;
+        cout<<"top of stack:"<<st.top()<<endl;
         st.pop();
     }
     return 0;
